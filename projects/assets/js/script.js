@@ -343,8 +343,6 @@ document.getElementById("share").addEventListener("click", function() {
       });
     } else {
       console.log("Web Share API not supported.");
-      // Fallback behavior for browsers that do not support Web Share API
-      // For example, you can open a share dialog or provide instructions to share manually
     }
   });
   
@@ -353,3 +351,21 @@ document.getElementById("share").addEventListener("click", function() {
 let b = document.querySelector('button');
 setTimeout(()=>b.focus(), 100);
 setTimeout(()=>b.blur(), 1000);
+
+
+//------------------------Downloading the image resume
+
+function downloadResume() {
+    // File path of the resume
+    const filePath = 'projects/assets/images/portfolio-pics/resume.jpg'; 
+
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = 'resume.jpg';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+}
