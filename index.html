@@ -22,6 +22,7 @@
                     <div class="menus">
                       <button id="homebtnID" class="home-button">Home</button>
                       <button id="aboutbtnID" class="about-button">About</button>
+                      <button id="certificatesbtnID" class="certificate-button">Certificates</button>
                       <button id="projectsbtnID" class="projects-button">Projects</button>
                       <button id="skillsbtnID" class="skills-button">Skills</button>
                       <button id="servicesbtnID" class="services-button">Services</button>
@@ -34,6 +35,42 @@
                     </div>
                 </div>
             </header>
+
+
+            <!--Certificates Part-->
+            <div class="certificates-main">
+                <h class="titles-main fade-first-in-from-above">Certificates</h>
+                
+                <div class="certificates-container fadeInElement">
+                    
+                    <!-- Certificate 1 -->
+                    <div class="certificate-item">
+                        <h2 class="certificate-title">PLC Systems</h2>
+                        <div class="certificate-image-container">
+                            <img class="certificate-image" src="projects/assets/images/certificates-pics/PLC Systems.png" alt="Certificate 1">
+                        </div>
+                    </div>
+                    
+                    <!-- Certificate 2 -->
+                    <div class="certificate-item">
+                        <h2 class="certificate-title">Computer Systems Servicing - NC II</h2>
+                        <div class="certificate-image-container">
+                            <img class="certificate-image" src="projects/assets/images/certificates-pics/CSS - NC II.jpg" alt="Certificate 2">
+                        </div>
+                    </div>
+                    
+                    <!-- Certificate 3 -->
+                    <div class="certificate-item">
+                        <h2 class="certificate-title">Electronics Products Assembly And Servicing - NC II</h2>
+                        <div class="certificate-image-container">
+                            <img class="certificate-image" src="projects/assets/images/certificates-pics/EPAAS - NC II.jpg" alt="Certificate 3">
+                        </div>
+                    </div>
+                    
+                    <!-- Add more certificates as needed -->
+                    
+                </div>
+            </div>
 
             <!--Home Part-->
             <div class="home-main">
@@ -82,54 +119,114 @@
                     </p> 
                 </div>     
             </div>
-
-            <!--Projects Part-->
-            <div class="projects-main">
-
-                <h class="titles-main fade-first-in-from-above">Projects</h>
-                <div class="projects-panel-holder fadeInElement">
-
-                  <div class="project-panels calculator">
+   <!--Projects Part-->
+<div class="projects-main">
+    <h class="titles-main fade-first-in-from-above">Projects</h>
+    
+    <div class="projects-panel-holder fadeInElement">
+        
+        <!-- WEB APPLICATIONS CATEGORY -->
+        <div class="project-category">
+            <h2 class="category-title">Web Applications</h2>
+            <div class="projects-grid">
+                
+                <div class="project-panels event-management">
                     <div class="project-title-panel">
-                      <h7 class="projects-title">CALCULATOR</h7>
-                    </div>
-                    <div class="projects-languages-panels">
-                      <h11 class="java">Java</h11>
-                    </div>
-                    <div class="video-holder-panels">
-                      <img class="picture-proj" src="projects/assets/images/projects-pics/calculator.png" type="image">
-                    </div>
-                    <div class="reacts-panel">
-                        <button class="see_more_button">See more...</button>
-                        <button class="get_code_button">Source Code</button>
-                        <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                        <span class="react-icon comment" id="commentID">&#128172;</span>
-                        <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div>                     
-                  </div>      
-
-                  <div class="project-panels valentine_invitation">
-                    <div class="project-title-panel">
-                        <h7 class="projects-title">Valentine Invitation</h7>
+                        <h7 class="projects-title">Event Management System</h7>
                     </div>
                     <div class="projects-languages-panels">
                         <h11 class="html">HTML</h11>
                         <h11 class="css">CSS</h11>
                         <h11 class="javascript">JavaScript</h11>
+                        <h11 class="php">PHP</h11>
+                        <h11 class="mysql">MySQL</h11>
+                        <h11 class="dockerfile">Dockerfile</h11>
+                        <h11 class="yaml">YAML</h11>
                     </div>
                     <div class="video-holder-panels">
-                        <img class="picture-proj" src="projects/assets/images/projects-pics/valentine_invitation.png" type="image">
+                        <img class="picture-proj" src="projects/assets/images/projects-pics/EventManagementSystem.jpg" type="image">
                     </div>
-                    <div class="reacts-panel">
-                          <button class="see_more_button">See more...</button>
-                          <button class="get_code_button">Source Code</button>
-                          <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                          <span class="react-icon comment" id="commentID">&#128172;</span>
-                          <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div> 
-                  </div>
+                    <div class="project-description">
+                        <p>A comprehensive web-based system for managing events, attendees, and schedules. Features user authentication, event creation, and real-time updates. Containerized with Docker for easy deployment.</p>
+                        
+                        <div class="system-architecture">
+                            <span class="system-architecture-title">System Architecture</span>
+                            <div class="architecture-buttons">
+                                <a href="projects/assets/pdfs/EventManagementSystem/Flowchart.pdf" target="_blank" class="architecture-btn-link">
+                                    <button class="architecture-btn">Flowchart</button>
+                                </a>
+                                <a href="projects/assets/pdfs/EventManagementSystem/Wireframe.pdf" target="_blank" class="architecture-btn-link">
+                                    <button class="architecture-btn">Wireframe</button>
+                                </a>
+                                <a href="projects/assets/pdfs/EventManagementSystem/UserInterface.pdf" target="_blank" class="architecture-btn-link">
+                                    <button class="architecture-btn">User Interface</button>
+                                </a>
+                                <a href="projects/assets/pdfs/EventManagementSystem/UserFlow.pdf" target="_blank" class="architecture-btn-link">
+                                    <button class="architecture-btn">User Flow</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                  <div class="project-panels notepad">
+                <div class="project-panels webtechnest">
+                    <div class="project-title-panel">
+                        <h7 class="projects-title">E-commerce WebTechNest</h7>
+                    </div>
+                    <div class="projects-languages-panels">
+                        <h11 class="html">HTML</h11>
+                        <h11 class="css">CSS</h11>
+                        <h11 class="javascript">JavaScript</h11>
+                        <h11 class="firebase">Firebase</h11>
+                        <h11 class="nodejs">Node.js</h11>
+                        <h11 class="express">Render</h11>
+                        <h11 class="googleapi">Google API</h11>
+                    </div>
+                    <div class="video-holder-panels">
+                        <img class="picture-proj" src="projects/assets/images/projects-pics/webtechnest.jpg" type="image">
+                    </div>
+                    <div class="project-description">
+                        
+                        <p>A comprehensive e-commerce platform for selling digital products. Built with Firebase for real-time database and authentication, Render backend server, and Google API integration. Features secure payment processing, product management, and user dashboard.</p>
+                        <div class="system-architecture">
+                            <span class="system-architecture-title">Website Link</span>
+                            <div class="architecture-buttons">
+                                <a href="https://webtechnest.onrender.com/" target="_blank" class="architecture-btn-link">
+                                    <button class="architecture-btn">See More...</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+                <!-- Add more web applications here -->
+                
+            </div>
+        </div>
+
+        <!-- JAVA APPLICATIONS CATEGORY -->
+        <div class="project-category">
+            <h2 class="category-title">Java Applications</h2>
+            <div class="projects-grid">
+                
+                <div class="project-panels calculator">
+                    <div class="project-title-panel">
+                        <h7 class="projects-title">CALCULATOR</h7>
+                    </div>
+                    <div class="projects-languages-panels">
+                        <h11 class="java">Java</h11>
+                    </div>
+                    <div class="video-holder-panels">
+                        <img class="picture-proj" src="projects/assets/images/projects-pics/calculator.png" type="image">
+                    </div>
+                    <div class="project-description">
+                        <p>A fully functional desktop calculator application built with Java Swing. Supports basic arithmetic operations, decimal calculations, and keyboard input with a clean, intuitive interface.</p>
+                    </div>
+                </div>
+
+                <div class="project-panels notepad">
                     <div class="project-title-panel">
                         <h7 class="projects-title">NOTEPAD</h7>
                     </div>
@@ -139,16 +236,12 @@
                     <div class="video-holder-panels">
                         <img class="picture-proj" src="projects/assets/images/projects-pics/Notepad.png" type="image">
                     </div>
-                    <div class="reacts-panel">
-                          <button class="see_more_button">See more...</button>
-                          <button class="get_code_button">Source Code</button>
-                          <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                          <span class="react-icon comment" id="commentID">&#128172;</span>
-                          <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div> 
-                  </div>
+                    <div class="project-description">
+                        <p>A simple yet powerful text editor similar to Windows Notepad. Features include file operations (new, open, save), text editing tools, and search functionality with a user-friendly GUI.</p>
+                    </div>
+                </div>
 
-                  <div class="project-panels todolist">
+                <div class="project-panels todolist">
                     <div class="project-title-panel">
                         <h7 class="projects-title">Todolist Management System</h7>
                     </div>
@@ -158,18 +251,14 @@
                     <div class="video-holder-panels">
                         <img class="picture-proj" src="projects/assets/images/projects-pics/todolist-management-system.png" type="image">
                     </div>
-                    <div class="reacts-panel">
-                          <button class="see_more_button">See more...</button>
-                          <button class="get_code_button">Source Code</button>
-                          <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                          <span class="react-icon comment" id="commentID">&#128172;</span>
-                          <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div>   
-                  </div>
+                    <div class="project-description">
+                        <p>Task management application that helps organize daily activities. Features task creation, priority setting, due dates, and completion tracking to boost productivity and time management.</p>
+                    </div>
+                </div>
 
-                  <div class="project-panels">
+                <div class="project-panels ai-helper">
                     <div class="project-title-panel">
-                        <h7 class="projects-title">My Ai Helper</h7>
+                        <h7 class="projects-title">My AI Helper</h7>
                     </div>
                     <div class="projects-languages-panels">
                         <h11 class="java">Java</h11>
@@ -177,77 +266,18 @@
                     <div class="video-holder-panels">
                         <img class="picture-proj" src="projects/assets/images/projects-pics/MyOwnAi.png" type="image">
                     </div>
-                    <div class="reacts-panel">
-                          <button class="see_more_button">See more...</button>
-                          <button class="get_code_button">Source Code</button>
-                          <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                          <span class="react-icon comment" id="commentID">&#128172;</span>
-                          <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div> 
-                  </div>  
-
-                  <div class="project-panels animated-ball">
-                    <div class="project-title-panel">
-                        <h7 class="projects-title">Simple Ball Animation</h7>
+                    <div class="project-description">
+                        <p>An intelligent assistant application using natural language processing. Provides automated responses, task suggestions, and helpful information based on user queries and preferences.</p>
                     </div>
-                    <div class="projects-languages-panels">
-                        <h11 class="java">Java</h11>
-                    </div>
-                    <div class="video-holder-panels">
-                        <img class="picture-proj" src="projects/assets/images/projects-pics/bouncing-ball.png" type="image">
-                    </div>
-                    <div class="reacts-panel">
-                          <button class="see_more_button">See more...</button>
-                          <button class="get_code_button">Source Code</button>
-                          <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                          <span class="react-icon comment" id="commentID">&#128172;</span>
-                          <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div>
-                  </div>
-
-                  <div class="project-panels simple_timer">
-                    <div class="project-title-panel">
-                        <h7 class="projects-title">Simple Timer</h7>
-                    </div>
-                    <div class="projects-languages-panels">
-                        <h11 class="java">Java</h11>
-                    </div>
-                    <div class="video-holder-panels">
-                        <img class="picture-proj" src="projects/assets/images/projects-pics/timer.png" type="image">
-                    </div>
-                    <div class="reacts-panel">
-                          <button class="see_more_button">See more...</button>
-                          <button class="get_code_button">Source Code</button>
-                          <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                          <span class="react-icon comment" id="commentID">&#128172;</span>
-                          <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div> 
-                  </div>
-
-                  <div class="project-panels giveaway-rewards">
-                    <div class="project-title-panel">
-                        <h7 class="projects-title">Helmet Heroes Giveaway</h7>
-                    </div>
-                    <div class="projects-languages-panels">
-                        <h11 class="html">HTMl</h11>
-                        <h11 class="css">CSS</h11>
-                        <h11 class="javascript">JavaScript</h11>
-                        <h11 class="otherapp">App as DB</h11>
-                    </div>
-                    <div class="video-holder-panels">
-                        <img class="picture-proj" src="projects/assets/images/projects-pics/giveaway.png" type="image">
-                    </div>
-                    <div class="reacts-panel">
-                          <button class="see_more_button">See more...</button>
-                          <button class="get_code_button">Source Code</button>
-                          <div class="heart" onclick="this.classList.toggle('clicked');">&#xf004;</div>
-                          <span class="react-icon comment" id="commentID">&#128172;</span>
-                          <span class="react-icon share-icon" id="share">&#128064;</span>
-                    </div>  
-                  </div>
                 </div>
+                
+                <!-- Add more Java applications here -->
+                
             </div>
-
+        </div>
+        
+    </div>
+</div>
 
             <!--Skills Part-->
             <div class="skills-main">
@@ -547,15 +577,13 @@
                     </div>
                     <div class="resume-das-panel fade-third-in-from-bottom">
                         <h5  class="information-titles">
-                         Resume and DAS    
+                         Resume
                         </h5>
 
                         <p1 class="info-sentences fade-in-above">
                             <b>☆Resume</b><br>
                             <span class="download-link" onclick="downloadResume()"><dlresumetext>Click here to download the resumes</dlresumetext></span> <br><br>
 
-                            <b>☆DAS</b><br>https://docs.google.com/spreadsheets/d/1GOEsGIGoo_Y58zDjvOvRJRsifm4YZAQF3r_E_60zRus/edit?gid=1448537796#gid=1448537796
-                            <a href="https://docs.google.com/spreadsheets/d/1GOEsGIGoo_Y58zDjvOvRJRsifm4YZAQF3r_E_60zRus/edit?gid=1448537796#gid=1448537796"><dlresumetext>Click here to see Das Record</dlresumetext></a><br>
                         </p1>
                     </div>
                 </div>

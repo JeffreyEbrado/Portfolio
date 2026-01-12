@@ -42,6 +42,7 @@ document.querySelectorAll('.circle-buttons-panel button').forEach(button => {
 //Desktop devices
 const homeButton = document.getElementById('homebtnID');
 const aboutButton = document.getElementById('aboutbtnID');
+const certificatesButton = document.getElementById('certificatesbtnID');
 const projectsButton = document.getElementById('projectsbtnID');
 const skillsButton = document.getElementById('skillsbtnID');
 const servicesButton = document.getElementById('servicesbtnID');
@@ -51,6 +52,7 @@ const contactButton = document.getElementById('contactbtnID');
 
 const homeMain = document.querySelector('.home-main');
 const aboutMain = document.querySelector('.about-main');
+const certificatesMain = document.querySelector('.certificates-main');
 const projectsMain = document.querySelector('.projects-main');
 const skillsMain = document.querySelector('.skills-main');
 const servicesMain = document.querySelector('.services-main');
@@ -61,6 +63,7 @@ const mobileButtons = document.querySelectorAll('.mobile-home-button, .mobile-ab
 const desktopButtons = [
     { button: homeButton, main: homeMain },
     { button: aboutButton, main: aboutMain },
+    { button: certificatesButton, main: certificatesMain },
     { button: projectsButton, main: projectsMain },
     { button: skillsButton, main: skillsMain },
     { button: servicesButton, main: servicesMain },
@@ -369,3 +372,67 @@ function downloadResume() {
 
     document.body.removeChild(link);
 }
+
+//
+
+// PDF paths - Replace these with your actual PDF file paths
+const pdfPaths = {
+    flowchart: 'projects/assets/pdfs/EventManagementSystem/Flowchart.pdf',
+    wireframe: 'projects/assets/pdfs/EventManagementSystem/Wireframe.pdf',
+    ui: 'projects/assets/pdfs/EventManagementSystem/UserInterface.pdf',
+    userflow: 'projects/assets/pdfs/EventManagementSystem/UserFlow.pdf'
+};
+
+// Titles for each document
+const pdfTitles = {
+    flowchart: 'System Flowchart',
+    wireframe: 'Wireframe Design',
+    ui: 'User Interface Design',
+    userflow: 'User Flow Diagram'
+};
+
+function openPDF(type) {
+    const modal = document.getElementById('pdfViewerModal');
+    const iframe = document.getElementById('pdfIframe');
+    const title = document.getElementById('pdfViewerTitle');
+    
+    // Set the PDF source
+    iframe.src = pdfPaths[type];
+    
+    // Set the title
+    title.textContent = pdfTitles[type];
+    
+    // Show the modal
+    modal.classList.add('active');
+    
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+function closePDF() {
+    const modal = document.getElementById('pdfViewerModal');
+    const iframe = document.getElementById('pdfIframe');
+    
+    // Hide the modal
+    modal.classList.remove('active');
+    
+    // Clear the iframe source
+    iframe.src = '';
+    
+    // Restore body scroll
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside the container
+document.getElementById('pdfViewerModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closePDF();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closePDF();
+    }
+});
