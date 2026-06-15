@@ -1116,6 +1116,7 @@ p {
 /* Languages to select in html to put as Headers */
 .java,
 .lua,
+.paypal,
 .python,
 .javascript,
 .sql,
@@ -1145,6 +1146,11 @@ p {
 .lua {
   background-color: rgb(255, 0, 0);
   color: rgba(0, 209, 10, 0.884);
+}
+
+.paypal {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 102, 255, 0.884);
 }
 
 .html {
